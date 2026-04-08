@@ -92,3 +92,20 @@ Their README or homepage is accurate, but flat:
 - not enough proof near the top
 
 This skill exists to help agents systematically fix that.
+
+## Codex-oriented usage
+
+This repo is especially useful when you want Codex or Claude Code to work in one of three modes:
+
+- **Critique mode**: review the current page and identify the biggest clarity or conversion problems
+- **Rewrite-plan mode**: propose a new structure plus improved hero, CTA, and section hierarchy
+- **Direct-edit mode**: edit the actual markdown or page file and summarize the change
+
+Recommended prompt patterns:
+
+- `Use design-md in critique mode on this README.`
+- `Use design-md to propose a rewrite plan for this landing page.`
+- `Use design-md in direct-edit mode and improve this homepage copy.`
+- `Read SKILL.md and references, then rewrite the hero and CTA only.`
+
+If the request is broad, start with critique mode. If the file is already close, direct-edit mode is usually faster.

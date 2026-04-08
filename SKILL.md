@@ -118,7 +118,7 @@ Adjust the tone and structure for the product:
 
 ## Output modes
 
-Choose one of these output styles based on the request.
+Choose one of these output styles based on the request. When the user is vague, default to critique mode first, then move to rewrite-plan or direct-edit mode if the next step is obvious.
 
 ### Mode A — critique only
 Return:
@@ -135,6 +135,7 @@ Return:
 ### Mode C — direct rewrite
 Edit the relevant markdown, copy, or page files directly.
 When doing this, preserve factual accuracy and avoid inventing proof.
+After editing, provide a short implementation summary and call out any remaining proof gaps.
 
 ## Guardrails
 
@@ -161,6 +162,8 @@ Read these only when needed:
 - `references/cta-patterns.md` for CTA selection and placement
 - `references/evaluation-rubric.md` for scoring and critique dimensions
 - `references/page-types.md` for adapting recommendations to README, landing-page, docs-homepage, or launch-page contexts
+- `references/codex-usage-patterns.md` for how to apply the skill in critique, plan, and direct-edit sessions
+- `references/deliverable-templates.md` for lightweight response structures when returning analysis or rewrite plans
 
 ## Good usage examples
 
@@ -179,3 +182,13 @@ Prefer before/after suggestions over vague advice.
 When possible, give 2–3 headline options with different positioning angles.
 If the current draft lacks proof, explicitly call that out and adjust the copy to remain credible.
 If asked to edit files, make the smallest set of changes that materially improves clarity and conversion.
+
+## Codex-oriented execution rules
+
+When using this skill in Codex or Claude Code:
+- prefer changing copy before changing component structure
+- keep edits localized unless the information architecture is clearly broken
+- if a file already has a sensible layout, improve the message rather than rebuilding the page
+- if a file lacks proof, do not compensate with stronger hype; instead lower claim intensity and note the gap
+- when possible, produce 2–3 hero options before committing to one direction
+- if the request is implementation-oriented, make the edit and then summarize the reasoning briefly
