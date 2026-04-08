@@ -160,6 +160,7 @@ Read these only when needed:
 - `references/headline-patterns.md` for headline, subheadline, and proof-line patterns
 - `references/cta-patterns.md` for CTA selection and placement
 - `references/evaluation-rubric.md` for scoring and critique dimensions
+- `references/page-types.md` for adapting recommendations to README, landing-page, docs-homepage, or launch-page contexts
 
 ## Good usage examples
 
